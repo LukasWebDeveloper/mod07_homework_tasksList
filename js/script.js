@@ -66,7 +66,7 @@
       
    };
 
-   const render = () => {
+   const renderTasks = () => {
       let htmlString = "";
 
       for (const task of tasks) {
@@ -81,7 +81,32 @@
       }
 
       document.querySelector(".js-tasks").innerHTML = htmlString;
+   };
 
+   const renderButtons = () => {
+
+      // jeśli nie ma żadnych zadań na liście przyciski mają być ukryte,      ----- ZROBIŁEM SAM :)
+      // jeśli wszystkie zadania są ukończone przycisk oznaczenia wszystkich zadań jako ukończone ma być wyłączony
+
+      const hideOrShowTasks = document.querySelector(".button--hideTasks");
+      const markTasksDone = document.querySelector(".button--markTasksAllDone");
+      
+      if ( tasks.length === 0) {
+         hideOrShowTasks.style.display = "none";
+         markTasksDone.style.display = "none";
+      }
+
+      const allTasksDone = tasks.every((done) =>  done);
+
+      if (allTasksDone) {
+         markTasksDone.toggleAttribute("disabled");
+      }
+   };
+
+
+   const render = () => {
+      renderTasks();
+      renderButtons();
 
       bindEvents();
    };
