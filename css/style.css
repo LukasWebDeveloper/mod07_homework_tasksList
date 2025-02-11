@@ -1,0 +1,64 @@
+html {
+   box-sizing: border-box;
+}
+
+*, ::after, ::before {
+   box-sizing: inherit;
+}
+
+.body {
+   background-color: #eee;
+   font-family: "Arial", sans-serif;
+   max-width: 768px;
+   margin: 0 auto;
+   word-break: break-all;
+}
+
+.header__title {
+   margin-left: 4%;
+   margin-right: 4%;
+}
+
+.main {
+   display: block;
+   position: relative;
+}
+
+.section {
+   background-color: #fff;
+}
+
+.form {
+   display: flex;
+   flex-direction: row;
+   padding: 2%;
+   padding-top: 0;
+}
+
+@media (max-width: 450px) {
+   .form {
+      display: flex;
+      flex-direction: column;
+   }
+}
+
+.buttonToggleTrue {
+   height: 25px;
+   width: 25px;
+   background-image: url(../img/iconDone_2.png);
+   border: 2px solid white;
+}
+
+.buttonToggleFalse {
+   height: 25px;
+   width: 25px;
+   background-image: url(../img/iconDone_1.png);
+   border: 2px solid white;
+}
+
+.buttonRemove {
+   height: 30px;
+   width: 30px;
+   background-image: url(../img/iconWastebasket.png);
+   border: 2px solid white;
+}
