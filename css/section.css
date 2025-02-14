@@ -23,6 +23,29 @@
    padding: 2%;
 }
 
+@media (max-width: 500px) {
+   .div__headerAndButtons {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      border-bottom: 2px solid #eee;
+      
+      padding: 4%;
+   }
+
+   .button--hideTasks {
+      padding: 2%;
+   }
+
+   .button--markTasksAllDone {
+      padding: 2%;
+   }
+
+   .disabledMarkTasksDone {
+      padding: 2%;
+   }
+}
+
 .section__titleTasksList {
    flex-grow: 1;
 }
@@ -43,6 +66,12 @@
    border: none;
 }
 
+.divButtons {
+   display: flex;
+   flex-direction: row;
+   flex-grow: 0.05;
+}
+
 .button--markTasksAllDone {
    margin-right: 2%;
    direction: none;
@@ -58,6 +87,14 @@
    color: rgb(108, 211, 211);
    border: none;
 }
+
+.disabledMarkTasksDone {
+   margin-right: 2%;
+   direction: none;
+   background-color: #fff;
+   border: none;
+}
+
 
 .tasks {
    display: flex;
@@ -77,7 +114,7 @@
    border-bottom: 2px solid #eee;
 }
 
-.list__content {
+.tasks__content {
    flex-grow: 1;
    padding-left: 2%;
 }

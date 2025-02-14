@@ -4,6 +4,9 @@
    border: 2px solid #eee;
 }
 
+.tasks__item--hidden {
+   display: none;
+}
 
 @media (max-width: 450px) {
    .newTask {
@@ -20,9 +23,19 @@
    border: 2px solid teal;
 }
 
+.js-button {
+   transition: 0.3s linear;
+   transform: scale(1);
+
+}
+.button:hover {
+   transition: 0.3s linear;
+   transform: scale(1.1);
+   background-color: rgb(43, 183, 183);
+}
+
 @media (max-width: 450px) {
    .button {
       margin-left: 0%;
    }
 }
-

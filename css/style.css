@@ -56,7 +56,7 @@ html {
    border: 2px solid white;
 }
 
-.buttonRemove {
+.tasks-button--remove {
    height: 30px;
    width: 30px;
    background-image: url(../img/iconWastebasket.png);
