@@ -1,12 +1,8 @@
 {
-   let tasks = [
-      {
-         content: "wypij mleko",
-      },
-   ];
+   let tasks = [];
    let hideDoneTasks = false;
 
-   const addNewTask = (newTaskContent) => {     //zrobione do zad 1  homework mod07
+   const addNewTask = (newTaskContent) => {
       tasks = [
          ...tasks,
          {
@@ -17,7 +13,7 @@
       render();
    };
 
-   const removeTask = (taskIndex) => {      //zrobione do zad 1  homework mod07
+   const removeTask = (taskIndex) => { 
       tasks = [
          ...tasks.slice(0, taskIndex),
          ...tasks.slice(taskIndex + 1),
@@ -25,7 +21,7 @@
       render();
    };
 
-   const toggleTaskDone = (taskIndex) => {      //zrobione do zad 1  homework mod07
+   const toggleTaskDone = (taskIndex) => {
       tasks = [
          ...tasks.slice(0, taskIndex),
          {
@@ -166,4 +162,3 @@
    init();
    
 }
-// ----------------------------------------------------------------------------------------- 10:20 s

@@ -39,7 +39,7 @@
    border: 2px solid teal;
 }
 
-.js-button {
+.js-formButton {
    transition: 0.3s linear;
    transform: scale(1);
 
