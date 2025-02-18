@@ -1,0 +1,75 @@
+.div__button {
+   margin-right: 2%;
+   padding-right: 2%;
+   background-color: white;
+   border: none;
+}
+
+.div__button:hover {
+   margin-right: 2%;
+   direction: none;
+   background-color: #fff;
+   color: rgb(108, 211, 211);
+   border: none;
+}
+
+.js-div__button--toggleHideDoneTasks {
+   color: teal;
+}
+
+.div__button--markTasksAllDone {
+   margin-right: 2%;
+   direction: none;
+   background-color: #fff;
+   color: teal;
+   border: none;
+
+}
+
+.div__button--markTasksAllDone:hover {
+   margin-right: 2%;
+   direction: none;
+   background-color: #fff;
+   color: rgb(108, 211, 211);
+   border: none;
+}
+
+@media (max-height: 500px) {
+   /* ++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+   .js-div__button--toggleHideDoneTasks {
+      margin: 1%;
+   }
+
+   .div__button--markTasksAllDone {
+      display: flex;
+      align-self: center;
+      direction: none;
+      background-color: #fff;
+      color: teal;
+      margin: 1%;
+      border: none;
+      /* flex-grow: 1.4; */
+   }
+}
+
+.buttonTask--remove {
+   height: 30px;
+   width: 30px;
+   background-image: url(../img/iconWastebasket.png);
+   border: 2px solid white;
+}
+
+.button__tasksListItem--ToggleTrue {
+   height: 25px;
+   width: 25px;
+   background-image: url(../img/iconDone_2.png);
+   border: 2px solid white;
+}
+
+.buttonTask__listItem--toggleFalse {
+   height: 25px;
+   width: 25px;
+   background-image: url(../img/iconDone_1.png);
+   border: 2px solid white;
+}

@@ -1,15 +1,31 @@
-.newTask {
+.form {
+   display: flex;
+   flex-direction: row;
+   padding: 2%;
+   padding-top: 0;
+}
+
+@media (max-width: 450px) {
+   .form {
+      display: flex;
+      flex-direction: column;
+   }
+}
+
+.form__newTask {
    flex-grow: 1;
    padding: 1%;
    border: 2px solid #eee;
 }
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
 .tasks__item--hidden {
    display: none;
 }
 
 @media (max-width: 450px) {
-   .newTask {
+   .form__newTask {
       margin-bottom: 2%;
    }
 }

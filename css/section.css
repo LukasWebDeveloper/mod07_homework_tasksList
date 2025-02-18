@@ -1,3 +1,7 @@
+.section {
+   background-color: #fff;
+}
+
 .sectionAddTask {
    margin: 0 4%;
 }
@@ -5,52 +9,21 @@
 .section__titleNewTask {
    border-bottom: 2px solid #eee;
    padding: 2%;
-}   
+}
 
 .sectionTasks {
    top: -15px;
    margin: 0 4%;
    margin-top: 1%;
-}
-
-  
-
-.div__headerAndButtons {
-   display: flex;
-   flex-direction: row;
-   justify-content: flex-start;
-   border-bottom: 2px solid #eee;
-   padding: 2%;
-}
-
-@media (max-width: 500px) {
-   .div__headerAndButtons {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      border-bottom: 2px solid #eee;
-      
-      padding: 4%;
-   }
-
-   .button--hideTasks {
-      padding: 2%;
-   }
-
-   .button--markTasksAllDone {
-      padding: 2%;
-   }
-
-   .disabledMarkTasksDone {
-      padding: 2%;
-   }
-}
+}   
 
 .section__titleTasksList {
    flex-grow: 1;
 }
 
-.button--hideTasks {
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.js-button--toggleHideDoneTasks {
    margin-right: 2%;
    direction: none;
    background-color: #fff;
@@ -58,7 +31,7 @@
    border: none;
 }
 
-.button--hideTasks:hover {
+.js-button--toggleHideDoneTasks:hover {
    margin-right: 2%;
    direction: none;
    background-color: #fff;
@@ -72,49 +45,9 @@
    flex-grow: 0.05;
 }
 
-.button--markTasksAllDone {
-   margin-right: 2%;
-   direction: none;
-   background-color: #fff;
-   color: teal;
-   border: none;
-}
-
-.button--markTasksAllDone:hover {
-   margin-right: 2%;
-   direction: none;
-   background-color: #fff;
-   color: rgb(108, 211, 211);
-   border: none;
-}
-
-.disabledMarkTasksDone {
+.button__disabledMarkTasksDone {
    margin-right: 2%;
    direction: none;
    background-color: #fff;
    border: none;
-}
-
-
-.tasks {
-   display: flex;
-   flex-direction: column;
-   align-content: space-evenly ;
-   margin: 0 2%;
-   padding-left: 0px;
-   padding-bottom: 2%;
-   list-style: none;
-}
-
-.list__item {
-   display: flex;
-   flex-direction: row;
-   margin: 1%;
-   padding: 1% 2%;
-   border-bottom: 2px solid #eee;
-}
-
-.tasks__content {
-   flex-grow: 1;
-   padding-left: 2%;
 }

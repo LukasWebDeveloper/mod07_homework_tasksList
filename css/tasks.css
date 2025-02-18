@@ -1,0 +1,30 @@
+.tasksList {
+   display: flex;
+   flex-direction: column;
+   align-content: space-evenly ;
+   margin: 0 2%;
+   padding-left: 0px;
+   padding-bottom: 2%;
+   list-style: none;
+}
+
+.tasksList__element {
+   display: flex;
+   flex-direction: row;
+   margin: 1%;
+   padding: 1% 2%;
+   border-bottom: 2px solid #eee;
+}
+
+.tasksList__content {
+   flex-grow: 1;
+   padding-left: 2%;
+}
+
+.tasksList__element--hidden {
+   display: none;
+}
+
+.tasksList__content--done {
+   text-decoration: line-through;
+}
